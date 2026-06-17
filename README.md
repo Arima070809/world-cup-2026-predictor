@@ -8,7 +8,7 @@ A statistical model that predicts match outcomes and simulates the 2026 FIFA Wor
 
 This project builds a full prediction pipeline from raw historical match data to a live, interactive web app:
 
-1. **Elo rating system** — custom implementation based on the official [eloratings.net](https://www.eloratings.net/about) formula, with tournament-tier K-values, a goal-difference multiplier, and manual elite-team boosts to correct for confederation strength imbalances.
+1. **Elo rating system** — custom implementation based on the official elo formula, with tournament-tier K-values, a goal-difference multiplier, and manual elite-team boosts to correct for confederation strength imbalances.
 2. **Poisson regression model** — two GLMs (home goals, away goals) trained on Elo ratings, FIFA rank difference, neutral venue, and tournament importance.
 3. **Dixon-Coles correction** — adjusts low-scoring outcome probabilities (0-0, 1-0, 0-1, 1-1) to better match real-world draw frequency.
 4. **Monte Carlo simulation** — 10,000+ simulated tournaments to estimate group stage, knockout, and championship probabilities for all 48 teams.
@@ -69,7 +69,7 @@ Each Monte Carlo run simulates the full group stage (with real tiebreaker rules 
 ## Running Locally
 
 ```bash
-git clone https://github.com/<your-username>/world-cup-2026-predictor.git
+git clone https://github.com/<Arima070809>/world-cup-2026-predictor.git
 cd world-cup-2026-predictor
 pip install -r requirements.txt
 streamlit run app.py

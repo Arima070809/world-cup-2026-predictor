@@ -254,7 +254,7 @@ page = st.sidebar.radio("Navigate", [
 # ══════════════════════════════════════════════════════════════════════════════
 if page == "🏆 Champion Odds":
     st.title("🏆 2026 World Cup — Champion Probabilities")
-    st.caption("Based on 10,000 Monte Carlo simulations using the eloratings.net Elo formula")
+    st.caption("Based on 10,000 Monte Carlo simulations using Elo formula")
 
     col1, col2 = st.columns([3, 1])
 
